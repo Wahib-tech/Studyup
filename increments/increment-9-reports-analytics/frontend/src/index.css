@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Outfit:wght@400;500;600;700;800;900&display=swap');
+
+:root {
+  --bg-primary: #020617;
+  --bg-secondary: #0a0a0a;
+  --text-primary: #f8fafc;
+  --text-secondary: #94a3b8;
+  --accent-primary: #6366f1;
+  --accent-secondary: #06b6d4;
+  --accent-rose: #f43f5e;
+  --border-pro: rgba(255,255,255,0.08);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Outfit', 'Inter', sans-serif;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+button {
+  font-family: 'Outfit', sans-serif;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-primary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--bg-secondary);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #334155;
+}
+
+/* Print Optimization */
+@media print {
+  body {
+    background: white !important;
+    color: black !important;
+    font-family: 'Inter', sans-serif !important;
+  }
+  
+  /* Strictly hide all navigational and interactive UI */
+  aside, nav, header, 
+  .MuiDrawer-root, 
+  .MuiAppBar-root,
+  .MuiButton-root,
+  [role="navigation"],
+  [role="banner"] {
+    display: none !important;
+  }
+
+  /* Reset main container layout */
+  .MuiBox-root {
+    margin-left: 0 !important;
+    padding-left: 0 !important;
+    width: 100% !important;
+  }
+
+  /* Page Settings */
+  @page {
+    size: A4;
+    margin: 15mm;
+  }
+
+  /* Utility classes for fine-tuning */
+  .print-hide {
+    display: none !important;
+  }
+  
+  .print-only {
+    display: block !important;
+  }
+}

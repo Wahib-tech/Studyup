@@ -1,0 +1,16 @@
+{
+  "name": "studyup-managed",
+  "version": "1.0.0",
+  "description": "Multi-increment StudyUp Project",
+  "scripts": {
+    "run:inc1": "run-increment.bat",
+    "run:inc2": "run-increment.bat",
+    "run:inc3": "run-increment.bat",
+    "run:inc4": "run-increment.bat",
+    "run:inc5": "run-increment.bat",
+    "run:inc6": "run-increment.bat",
+    "run:inc7": "run-increment.bat",
+    "run:inc8": "run-increment.bat",
+    "run:inc9": "run-increment.bat"
+  }
+}
