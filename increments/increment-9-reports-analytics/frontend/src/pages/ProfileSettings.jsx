@@ -8,7 +8,7 @@ import {
 import PhotoCameraIcon from '@mui/icons-material/PhotoCamera';
 import SaveIcon from '@mui/icons-material/Save';
 import { useSelector } from 'react-redux';
-import axios from 'axios';
+import axios from '../utils/axios';
 import Cropper from 'react-easy-crop';
 import { getCroppedImg } from '../utils/cropImage';
 

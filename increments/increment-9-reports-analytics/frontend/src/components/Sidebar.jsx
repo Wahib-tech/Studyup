@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Box, List, ListItem, ListItemButton, ListItemIcon, ListItemText, Typography, Avatar, Button, Divider } from '@mui/material';
 import { useNavigate, useLocation } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
-import axios from 'axios';
+import axios from '../utils/axios';
 import { logout } from '../features/auth/authSlice';
 import socket from '../services/socketService';
 import HomeIcon from '@mui/icons-material/Home';

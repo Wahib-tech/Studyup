@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import axios from 'axios';
+import axios from '../utils/axios';
 import { 
   Box, Typography, Grid, Paper, Card, CardContent, 
   CircularProgress, LinearProgress, Divider, Avatar, 

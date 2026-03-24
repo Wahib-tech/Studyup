@@ -1,4 +1,4 @@
-import axios from 'axios';
+import axios from '../../utils/axios';
 const API_URL = '/api/auth/';
 const register = async (u) => {
   const r = await axios.post(API_URL + 'register', u);
