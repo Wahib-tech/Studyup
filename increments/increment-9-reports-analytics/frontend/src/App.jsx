@@ -14,8 +14,11 @@ import NotificationList from './pages/NotificationList';
 import Analytics from './pages/Analytics';
 import ProfileSettings from './pages/ProfileSettings';
 import Programs from './pages/Programs'; // New import
+import StudentList from './pages/StudentList';
 import ForgotPassword from './pages/ForgotPassword';
 import ResetPassword from './pages/ResetPassword';
+import About from './pages/About';
+import Contact from './pages/Contact';
 import AppLayout from './components/AppLayout';
 
 const PrivateRoute = () => {
@@ -102,6 +105,9 @@ function App() {
             <Route path="/analytics" element={<Analytics />} />
             <Route path="/profile" element={<ProfileSettings />} />
             <Route path="/programs" element={<Programs />} /> {/* Added routing for Programs */}
+            <Route path="/students" element={<StudentList />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/contact" element={<Contact />} />
           </Route>
 
           {/* Fallback */}

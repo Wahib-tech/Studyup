@@ -16,6 +16,8 @@ import SettingsIcon from '@mui/icons-material/Settings';
 import PeopleIcon from '@mui/icons-material/People';
 import ClassIcon from '@mui/icons-material/Class';
 import AssessmentIcon from '@mui/icons-material/Assessment';
+import InfoIcon from '@mui/icons-material/Info';
+import EmailIcon from '@mui/icons-material/Email';
 import PersonOutlineIcon from '@mui/icons-material/PersonOutline';
 
 const Sidebar = ({ mobile, onClose }) => {
@@ -65,6 +67,8 @@ const Sidebar = ({ mobile, onClose }) => {
     { text: 'Tasks', icon: <TaskIcon />, path: '/tasks', badge: counts.pendingTasks },
     { text: 'Analytics', icon: <BarChartIcon />, path: '/analytics' },
     { text: 'Notifications', icon: <NotificationsIcon />, path: '/notifications', badge: counts.unreadNotifications },
+    { text: 'About Us', icon: <InfoIcon />, path: '/about' },
+    { text: 'Contact Us', icon: <EmailIcon />, path: '/contact' },
   ];
 
   const handleNav = (path) => {
